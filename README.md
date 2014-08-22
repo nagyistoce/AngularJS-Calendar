@@ -4,8 +4,8 @@ AngularJS-Calendar
 Calendar Component
 
 indclude 
-<script src="lib/moment.min.js"></script>
-<script src="lib/fullcalendar.js"></script>
+moment.min.js
+fullcalendar.js
 
 
 ใน fullcalendar.js แก้บรรทัดที่1543 function removeEventSource, isSourcesEqual ,getSourcePrimitive เป็น
