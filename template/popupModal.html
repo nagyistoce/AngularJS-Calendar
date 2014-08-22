@@ -1,0 +1,37 @@
+ <div class="modal-header">
+           
+ </div>
+     <div class="modal-body">
+
+    <form class="form-horizontal" role="form" name="myform" ng-model="objform"> 
+     <table class="form-group-ed" width="100%">
+			<tr>
+			<td class="tb-col-ed-2"><label class="col-ed-2 control-label">Name :</label></td>
+			<td>
+				<!-- <select class="form-control form-control-miMx" ng-model="obj_user.user_level" style="min-width:150px;width: 100%;max-width:205px;">
+				    <option ng-repeat="obj in role_list" value="{{obj.id}}">{{obj.name}}</option>
+				</select> -->
+					<input type="text" class="form-control" ng-model="objform.objname" required></td>
+			<td class="emptyRightMargin"></td>
+			</tr>
+	</table>
+	<hr>
+	  <table class="form-group-ed" width="100%">
+			<tr>
+			<td class="tb-col-ed-2"><label class="col-ed-2 control-label">Category :</label></td>
+			<td>
+				<select class="form-control form-control-miMx" ng-model="objform.selectcat" style="min-width:150px;width: 100%;" required>
+				 	<option value="">--Select--</option>
+				    <option ng-repeat="obj in categort_list" value="{{obj}}">{{obj.name}}</option>
+				</select> 
+					
+			<td class="emptyRightMargin"></td>
+			</tr>
+	</table>
+	</form>
+        
+     </div>
+ <div class="modal-footer">
+            <button class="btn btn-primary" ng-disabled="!myform.$valid" style="width:100px;"  ng-click="ok()">OK</button>
+            <button class="btn btn-warning"  style="width:100px;" ng-click="cancel()">Cancel</button>
+ </div>
